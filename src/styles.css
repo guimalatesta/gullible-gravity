@@ -36,3 +36,34 @@ body[data-theme="dark"] {
 body[data-theme="light"] {
   background-color: #ecf3ff;
 }
+
+:root {
+  --color1: #1d50ff;
+  --color2: #f7d408;
+  --color3: #fd0202;
+  --color4: #00ff47;
+}
+
+/* Cores mais escuras para o modo escuro */
+body[data-theme="dark"] {
+  --color1: #0a3abf;
+  --color2: #bfa506;
+  --color3: #bf0202;
+  --color4: #00bf36;
+}
+
+.element:nth-child(1) {
+  background-color: var(--color1);
+}
+
+.element:nth-child(2) {
+  background-color: var(--color2);
+}
+
+.element:nth-child(3) {
+  background-color: var(--color3);
+}
+
+.element:nth-child(4) {
+  background-color: var(--color4);
+}

@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     element.style.height = `${size}px`;
     element.style.left = left;
     element.style.top = top;
-    element.style.backgroundColor = color;
 
     document.body.appendChild(element);
   }
@@ -39,8 +38,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   document.body.appendChild(darkModeButton);
-  const navbar: HTMLDivElement = document.createElement("div");
-  navbar.classList.add("navbar");
-  navbar.innerText = "Barra Superior";
-  document.body.appendChild(navbar);
 });
